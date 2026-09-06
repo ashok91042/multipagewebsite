@@ -46,6 +46,14 @@ a { color: inherit; }
 .nav-list a { color: var(--muted); text-decoration: none; font-size: .92rem; font-weight: 600; }
 .nav-list a:hover, .nav-list a[aria-current="page"] { color: var(--ink); }
 .nav-list a[aria-current="page"] { text-decoration: underline; text-decoration-color: var(--coral); text-decoration-thickness: 3px; text-underline-offset: 7px; }
+.nav-actions { display: flex; align-items: center; gap: 1rem; }
+.auth-links { display: flex; align-items: center; gap: .75rem; }
+.auth-link { color: var(--ink); text-decoration: none; font-weight: 700; }
+.user-badge { display: flex; align-items: center; gap: .75rem; padding: .35rem .55rem .35rem .85rem; border: 1px solid var(--line); border-radius: 999px; background: var(--white); }
+.user-badge span { color: var(--ink); font-size: .8rem; }
+.user-badge strong { font-size: .85rem; }
+.auth-button { min-height: 36px; padding: .45rem .8rem; font-size: .78rem; }
+[hidden] { display: none !important; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: .6rem; min-height: 48px; padding: .75rem 1.15rem; border: 1px solid var(--ink); border-radius: var(--radius); background: var(--ink); color: var(--white); text-decoration: none; font-weight: 700; transition: transform .2s ease, background .2s ease; }
 .button:hover { transform: translateY(-2px); background: var(--teal); border-color: var(--teal); }
 .button-secondary { color: var(--ink); background: transparent; }
@@ -91,6 +99,16 @@ h3 { font-size: 1.35rem; }
 .contact-item { padding: 1.5rem; border-top: 4px solid var(--teal); background: var(--white); box-shadow: var(--shadow); }
 .contact-item h2 { margin-bottom: .7rem; font-size: 1rem; }
 .contact-item a { color: var(--teal); font-weight: 700; }
+.auth-page { padding: clamp(4rem, 9vw, 7rem) 0; }
+.auth-shell { display: grid; place-items: center; }
+.auth-card { width: min(100%, 540px); padding: clamp(2rem, 5vw, 3rem); background: var(--white); border: 1px solid var(--line); box-shadow: var(--shadow); border-radius: calc(var(--radius) + 4px); }
+.auth-form { display: grid; gap: 1.15rem; margin-top: 2rem; }
+.auth-field { display: grid; gap: .5rem; }
+.auth-field label { font-weight: 700; }
+.auth-field input { width: 100%; min-height: 48px; padding: .8rem 1rem; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; color: var(--ink); font: inherit; }
+.auth-status { margin: 0; font-size: .92rem; color: var(--muted); }
+.auth-status[data-state="error"] { color: #b12d2d; }
+.auth-status[data-state="success"] { color: var(--teal); }
 .not-found { min-height: calc(100vh - 250px); display: grid; place-items: center; text-align: center; }
 .not-found h1 { font-size: clamp(5rem, 18vw, 12rem); color: var(--coral); }
 .not-found p { max-width: 480px; margin: 1rem auto 2rem; color: var(--muted); }
