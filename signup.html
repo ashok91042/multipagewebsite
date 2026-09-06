@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Login | Northstar Studio</title>
-  <meta name="description" content="Log in to Northstar Studio using your session-based account.">
-  <meta property="og:title" content="Login | Northstar Studio">
-  <meta property="og:description" content="Northstar Studio secured session sign-in.">
+  <title>Sign up | Northstar Studio</title>
+  <meta name="description" content="Create a Northstar Studio account to start a session.">
+  <meta property="og:title" content="Sign up | Northstar Studio">
+  <meta property="og:description" content="Create your Northstar Studio account.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="/login.html">
+  <meta property="og:url" content="/signup.html">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,24 +46,33 @@
     <section class="auth-shell">
       <div class="container">
         <div class="auth-card">
-          <p class="eyebrow">Secure access</p>
-          <h1>Welcome back.</h1>
-          <p class="lede">Use your Northstar Studio account to start a session.</p>
+          <p class="eyebrow">Create account</p>
+          <h1>Start with clarity.</h1>
+          <p class="lede">Set up your account and begin your Northstar Studio session.</p>
 
-          <form class="auth-form" data-login-form novalidate>
+          <form class="auth-form" data-signup-form novalidate>
+            <div class="auth-field">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Your full name" required>
+            </div>
+
             <div class="auth-field">
               <label for="email">Email</label>
-              <input id="email" name="email" type="email" autocomplete="email" placeholder="team@northstar.studio" required>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
             </div>
 
             <div class="auth-field">
               <label for="password">Password</label>
-              <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+              <input id="password" name="password" type="password" autocomplete="new-password" placeholder="Create a password" required>
             </div>
 
-            <button class="button" type="submit">Log in</button>
-            <p class="auth-status" data-login-message aria-live="polite">Use team@northstar.studio / northstar123</p>
-            <p class="auth-status">Need an account? <a href="signup.html">Create one</a></p>
+            <div class="auth-field">
+              <label for="confirm-password">Confirm password</label>
+              <input id="confirm-password" name="confirm-password" type="password" autocomplete="new-password" placeholder="Confirm your password" required>
+            </div>
+
+            <button class="button" type="submit">Create account</button>
+            <p class="auth-status" data-signup-message aria-live="polite">Already have an account? <a href="login.html">Log in</a></p>
           </form>
         </div>
       </div>

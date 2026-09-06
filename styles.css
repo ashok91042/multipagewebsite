@@ -49,6 +49,7 @@ a { color: inherit; }
 .nav-actions { display: flex; align-items: center; gap: 1rem; }
 .auth-links { display: flex; align-items: center; gap: .75rem; }
 .auth-link { color: var(--ink); text-decoration: none; font-weight: 700; }
+.auth-link.primary { display: inline-flex; align-items: center; justify-content: center; min-height: 42px; padding: .7rem 1rem; border: 1px solid var(--ink); border-radius: var(--radius); background: var(--ink); color: var(--white); text-decoration: none; }
 .user-badge { display: flex; align-items: center; gap: .75rem; padding: .35rem .55rem .35rem .85rem; border: 1px solid var(--line); border-radius: 999px; background: var(--white); }
 .user-badge span { color: var(--ink); font-size: .8rem; }
 .user-badge strong { font-size: .85rem; }
